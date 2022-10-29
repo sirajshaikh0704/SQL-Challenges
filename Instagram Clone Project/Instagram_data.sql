@@ -21,7 +21,7 @@ SELECT * FROM
             DENSE_RANK() OVER( ORDER BY COUNT(*)  DESC) AS ROW_NUM
                 FROM users
                     GROUP BY day) AS A
-WHERE ROW_NUM = 1;
+			WHERE ROW_NUM = 1;
 
 
 /*We want to target our inactive users with an email campaign.
