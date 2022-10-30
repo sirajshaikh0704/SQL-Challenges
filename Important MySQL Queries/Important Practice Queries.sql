@@ -51,9 +51,9 @@ SALARY INT
 INSERT INTO EmployeePosition VALUES
 	(1, 'Manager', "2022-05-01", 500000),
 	(2, 'Executive', "2022-05-02", 75000),
-    (3, 'Manager', "2022-05-01", 90000),
-    (2, 'Lead', "2022-05-02",  85000),
-    (1, 'Executive', "2022-05-01", 300000);
+    	(3, 'Manager', "2022-05-01", 90000),
+    	(2, 'Lead', "2022-05-02",  85000),
+    	(1, 'Executive', "2022-05-01", 300000);
     
 SELECT * FROM EmployeePosition;
 
@@ -237,9 +237,9 @@ SELECT * FROM EmployeeInfo
 SELECT EP1.EmpID, EP1.Salary
 	FROM EmployeePosition EP1
 		WHERE 3-1 =
-					(SELECT COUNT(EP2.Salary)
-						FROM EmployeePosition EP2
-							WHERE EP2.Salary > EP1.Salary);
+			(SELECT COUNT(EP2.Salary)
+				FROM EmployeePosition EP2
+					WHERE EP2.Salary > EP1.Salary);
 	
 -- Q26. Write a query to display the first and the last record from the EmployeeInfo table.
 	SELECT * FROM EmployeeInfo
@@ -270,3 +270,7 @@ SELECT *
 	FROM EmployeeInfo
 		WHERE EmpID <=(
 			SELECT COUNT(EmpID)/2 from EmployeeInfo);
+			
+			
+			
+			                                               -- Thank You  --  
